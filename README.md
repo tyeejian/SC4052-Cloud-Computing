@@ -1,14 +1,18 @@
 # GitHub Search Tool
-*This is generated using LLM, it has not beed vetted and read through.*
+*This is generated using LLM, it has not beed vetted and read through thoroughly.*
+
+This project is an assignment project in NTU for the module SC4052 - Cloud Computing in AY2024/25.
+
+
 ## Overview
-This is a simple web application designed to facilitate the search for repositories or code using GitHub APIs. It allows users to perform basic searches within GitHub repositories and codes.
+This is a simple web application designed to facilitate the search for repositories or code using GitHub APIs. It allows users to perform basic searches within GitHub repositories and codes. The use of LLM is also available to generate code summary after searching for code in GitHub.
 
 ## Installation
 To use this tool, you need to have the necessary permissions to access GitHub repositories and code snippets. If you do not have these permissions, you will need to obtain an API token through your GitHub account.
 
 You can install the application using pip:
 
-`pip install streamlit`
+`pip install -r requirements.txt`
 
 Once installed, you can start building your repositories or writing code snippets directly into the application.
 
@@ -17,8 +21,8 @@ The application supports two main modes of operation:
 
 1. **Repository Search**: Searches for repositories based on keyword queries, programming languages, or topics.
 2. **Code Search**: Searches for code snippets based on keyword queries.
-   
-Each mode provides different features and capabilities, such as displaying repository information, loading and managing models, and providing additional details like the number of results displayed.
+3. **LLM**: Generate code summary by copy-pasting code from **Code Search**.
+
 
 ## Key Features
 - **Advanced Search Options**: Users can filter their search results using various criteria like sorting by stars, forks, or created dates.
@@ -28,7 +32,13 @@ Each mode provides different features and capabilities, such as displaying repos
 ## User Interface
 The application uses Streamlit, a lightweight Python library for creating web applications. It also leverages the `requests` library to fetch data from GitHub APIs.
 
-## Contributing
+## Future (possible) Improvments 
+- One-click button to generate summary from the code search module
+- Use Langchain to create a RAG to enable generation of README from all codes in the repository.
+- Enable the use of different models
+
+
+## Contributing (No need to contribute :))
 Contributions to improve the application's functionality or enhance its user experience are welcome! To contribute, follow these steps:
 
 1. Fork the repository (`git clone <owner>/<repository>`).
